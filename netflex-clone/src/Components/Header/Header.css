@@ -11,8 +11,24 @@
     transform: all 0.5s;
     transition-timing-function: ease-in;
     z-index: 1;
+    padding: 20px;
    
 }
+.header_left img{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+}
+
+
+.header_left img{
+     width: 80%;
+    padding-top: 5px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
 .nav_black{
 background-color: rgb(20,20,20);
 }
@@ -28,4 +44,9 @@ background-color: rgb(20,20,20);
     list-style: none;
     padding:2vh;
     
+}
+@media screen and (min-width:768px){
+    .header_outer_container{
+height:7rem
+}
 }

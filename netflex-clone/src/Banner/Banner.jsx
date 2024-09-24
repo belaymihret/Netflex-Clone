@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from '../src/Utils/axios';
-import requests from "../src/Utils/requests";
+import axios from '../Utils/axios';
+import requests from "../Utils/requests";
 import "./Banner.css";
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -30,7 +30,7 @@ const Banner = () => {
         className="banner"
         style={{
           backgroundSize: "cover",
-          backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
+          backgroundImage: `url('http://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
